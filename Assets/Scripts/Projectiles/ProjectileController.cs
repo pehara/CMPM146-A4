@@ -17,9 +17,12 @@ public class ProjectileController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform != null)
+        if (movement != null && transform != null)
+        {
             movement.Movement(transform);
+        }
     }
+
 
 
     private void OnCollisionEnter2D(Collision2D collision)
